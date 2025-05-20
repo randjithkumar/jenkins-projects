@@ -51,7 +51,7 @@ pipeline {
             cleanWs()
         }
         failure {
-            mail to: 'your-team@example.com',
+            mail to: 'team_email@example.com',
                  subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "Check Jenkins for details."
         }
